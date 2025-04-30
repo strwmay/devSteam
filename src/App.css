@@ -25,6 +25,39 @@ body {
   transform: scale(1.03);
 }
 
+.gameCard {
+  transition: transform 0.2s;
+  background: linear-gradient(to top, #1f6388, #2b87ae);
+  display: flex;
+  align-items: center;
+  margin: 0; /* Removed horizontal centering */
+}
+
+.gameCard:hover {
+  transform: scale(1.03);
+}
+
+.card-text  {
+  color: #b6b6b6;
+}
+
+.btn {
+  background-color: #4c6b22;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gameCard img {
+  width: 305px;
+  height: 145px;
+  object-fit: cover;
+  border-top-left-radius: 5px; /* Rounded top-left corner */
+  border-bottom-left-radius: 5px; /* Rounded bottom-left corner */
+}
+
 .desconto {
   background-color: #4c6b22;
   color: #beeb14;
