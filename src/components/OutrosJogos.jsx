@@ -6,42 +6,38 @@ const OutrosJogos = () => {
     () => [
       {
         id: 1,
-        titulo: "Counter-Strike 2",
-        preco: 0.0,
-        desconto: 0,
+        titulo: "Life is Strange Complete Season (Episodes 1 - 5)",
+        preco: 36.99,
         imagem:
-          "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
+          "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/319630/header.jpg?t=1724158918",
         descricao:
-          "O clássico FPS competitivo retorna com gráficos renovados e jogabilidade ainda mais precisa. Perfeito para amantes de tiro tático.",
-        categoria: "FPS",
+          "Siga a história de Max Caulfield, uma estudante de fotografia que descobre ser capaz de rebobinar o tempo ao salvar a melhor amiga, Chloe Price.",
+        categoria: "Ação e Aventura",
       },
       {
         id: 2,
-        titulo: "Cyberpunk 2077",
-        preco: 129.99,
-        desconto: 20,
+        titulo: "Detroit: Become Human",
+        preco: 119.99,
         imagem:
-          "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg",
+          "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222140/header.jpg?t=1667468479",
         descricao:
-          "Explore Night City como um mercenário em um futuro distópico, com narrativa profunda e visuais impressionantes.",
-        categoria: "RPG de Ação",
+          "Detroit: Become Human coloca o destino da humanidade e dos androides em suas mãos. Todas as suas escolhas afetam o resultado do jogo, com uma das narrativas mais intrinsecamente ramificadas já criadas.",
+        categoria: "Ação e Aventura",
       },
       {
         id: 3,
-        titulo: "Elden Ring",
-        preco: 249.9,
-        desconto: 35,
+        titulo: "The Quarry",
+        preco: 349.90,
         imagem:
-          "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg",
+          "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1577120/header.jpg?t=1730303267",
         descricao:
-          "Uma aventura épica em mundo aberto criada por Hidetaka Miyazaki e George R. R. Martin. Desafios intensos e lore profundo.",
-        categoria: "RPG",
+          "Ao anoitecer do último dia do acampamento de verão, os monitores adolescentes de Hackett's Quarry decidem comemorar com uma festa. Sem crianças. Sem adultos. Sem regras.",
+        categoria: "Aventura e Terror",
       },
       {
         id: 4,
         titulo: "Red Dead Redemption 2",
         preco: 199.9,
-        desconto: 40,
         imagem:
           "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg",
         descricao:
@@ -50,47 +46,43 @@ const OutrosJogos = () => {
       },
       {
         id: 5,
-        titulo: "Hogwarts Legacy",
-        preco: 229.99,
-        desconto: 10,
+        titulo: "Resident Evil 4",
+        preco: 69.50,
         imagem:
-          "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/header.jpg",
+          "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1736385712",
         descricao:
-          "Mergulhe no mundo bruxo de Hogwarts no século XIX. Crie seu próprio bruxo e descubra segredos mágicos.",
-        categoria: "RPG de Ação",
-      },
-      {
-        id: 6,
-        titulo: "The Witcher 3: Wild Hunt",
-        preco: 89.99,
-        desconto: 60,
-        imagem:
-          "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg",
-        descricao:
-          "Acompanhe Geralt de Rívia em sua busca épica por Ciri. Combate envolvente, escolhas impactantes e um dos melhores RPGs já feitos.",
-        categoria: "RPG",
-      },
-      {
-        id: 7,
-        titulo: "God of War",
-        preco: 159.99,
-        desconto: 25,
-        imagem:
-          "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg",
-        descricao:
-          "Kratos retorna em uma jornada emocional com seu filho Atreus. Uma releitura nórdica da lenda do Deus da Guerra.",
+          "Sobrevivência é apenas o começo. Seis anos se passaram desde o desastre biológico em Raccoon City. Leon S. Kennedy, um dos sobreviventes, segue o rastro da raptada filha do presidente até uma vila europeia isolada, onde há algo terrivelmente errado com os habitantes.",
         categoria: "Ação e Aventura",
       },
       {
-        id: 8,
-        titulo: "FIFA 24",
-        preco: 299.9,
-        desconto: 15,
+        id: 6,
+        titulo: "The Last of Us™ Part I",
+        preco: 249.90,
         imagem:
-          "https://cdn.cloudflare.steamstatic.com/steam/apps/2195250/header.jpg",
+          "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg?t=1741209545",
         descricao:
-          "O mais recente simulador de futebol da EA Sports, com gráficos realistas e modo carreira renovado.",
-        categoria: "Esportes",
+          "Descubra o jogo premiado que inspirou a série de TV aclamada pela crítica. Desbrave a América pós-apocalíptica com Joel e Ellie e conheça aliados e inimigos inesquecíveis em The Last of Us™.",
+        categoria: "Ação e Aventura",
+      },
+      {
+        id: 7,
+        titulo: "Final Fantasy VII Rebirth",
+        preco: 223.93,
+        imagem:
+          "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/header.jpg?t=1740049902",
+        descricao:
+          "A jornada rumo ao desconhecido continua... Cloud e seus amigos escapam da distópica cidade de Midgar e partem em uma aventura pelo planeta. Um mundo vasto e cheio de vida está à sua espera nessa aventura independente da trilogia do remake de FFVII!",
+        categoria: "Ação, Aventura e RPG",
+      },
+      {
+        id: 8,
+        titulo: "Until Dawn™",
+        preco: 299.99,
+        imagem:
+          "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2172010/header.jpg?t=1745495247",
+        descricao:
+          "Recriado e aprimorado para PC, Until Dawn convida você a reviver o pesadelo e mergulhar no terror envolvente e esquartejador em que cada decisão pode fazer a diferença entre a vida e a morte.",
+        categoria: "Aventura e Terror",
       },
     ],
     []
