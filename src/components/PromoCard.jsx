@@ -11,14 +11,15 @@ const PromoCard = (props) => {
         height={300}
         alt="Titulo do jogo"
       />
-      <div className="card-body d-flex flex-column gap-2">
+      <div className="card-body d-flex flex-column gap-1">
         <h5
           data-bs-toggle="tooltip"
           title={props.titulo}
-          className="card-title text-uppercase text-truncate mw-100 h-100 fw-bold text-light text-nowrap"
+          className="card-title text-uppercase text-truncate mw-100 h-100 fw-bold text-light text-nowrap mb-0"
         >
           {props.titulo}
         </h5>
+        <p className="card-text small mt-0 mb-1">{props.categoria}</p> {/* Reduced spacing */}
         <div className="m-0 row h-100 align-items-center justify-content-center">
           <span className="desconto col-4 h-100 fw-bold h5 m-0 d-flex align-items-center">
             -{props.desconto}%
@@ -35,9 +36,6 @@ const PromoCard = (props) => {
         <button
           id="addCarrinho"
           className="btn btn-success desconto text-light w-100 border-0"
-          //adicionando a ação de click para +1 item de jogo no carrinho
-
-          //não se faz necessário adicionar uma função de callback ou um item interno na função, exemplo onAddCarrinho(jogo);
           onClick={props.onAddCarrinho}
         >
           <i className="bi bi-cart-plus me-2"></i>

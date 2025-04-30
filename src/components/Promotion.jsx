@@ -28,7 +28,7 @@ const Promotion = (props) => {
           "https://www.devarsiv.com/wp-content/uploads/2023/02/The-Sims-4-INDIR-TUM-DLCler-Turkce-YAMA-TORRENT-FULL-INDIR-500x677-1.jpg",
         descricao:
           "Curta o poder de criar e controlar pessoas num mundo virtual onde não há regras. Seja poderoso e livre, divirta-se e jogue com a vida!",
-        categoria: "Aventura, Casual, Simulação, Gratuitos para Jogar",
+        categoria: "Aventura, Casual, Simulação",
       },
       {
         id: 3,
@@ -73,6 +73,7 @@ const Promotion = (props) => {
             precoFormatado={formatarMoeda(jogo.preco)}
             desconto={jogo.desconto}
             imagem={jogo.imagem}
+            categoria={jogo.categoria} // Passando a categoria
             formatarMoeda={formatarMoeda} // Passando a função para o PromoCard
             onAddCarrinho={() => props.onAddCarrinho(jogo)}
           />

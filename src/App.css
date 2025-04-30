@@ -12,7 +12,7 @@ body {
 .buscar,
 .buscar::placeholder {
   background-color: #2a475e;
-  color: #d7d7d7;
+  color: #9d9d9d;
 }
 
 .promoCard {
@@ -38,7 +38,7 @@ body {
 }
 
 .card-text  {
-  color: #b6b6b6;
+  color: #adadad;
 }
 
 .btn {
