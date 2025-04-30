@@ -31,7 +31,10 @@ function App() {
             : item
         );
       } else {
-        return [...itemAnterior, { ...produto, quantidade: 1 }];
+        return [
+          ...itemAnterior,
+          { ...produto, quantidade: 1, desconto: produto.desconto || 0 } // Define desconto padrão como 0
+        ];
       }
     });
   };

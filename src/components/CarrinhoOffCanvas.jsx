@@ -8,7 +8,8 @@ const CarrinhoOffCanvas = (props) => {
 
   const total = props.carrinhoItem.reduce(
     (acc, item) =>
-      acc + (item.preco - (item.preco * item.desconto) / 100) * item.quantidade,
+      acc +
+      (item.preco - (item.preco * (item.desconto || 0)) / 100) * item.quantidade, // Define desconto padrão como 0
     0
   );
 
@@ -94,7 +95,7 @@ const CarrinhoOffCanvas = (props) => {
                         </span>
                         <span className="fw-bolder">
                           {formatarMoeda(
-                            item.preco - (item.preco * item.desconto) / 100
+                            item.preco - (item.preco * (item.desconto || 0)) / 100 // Define desconto padrão como 0
                           )}
                         </span>
                       </div>

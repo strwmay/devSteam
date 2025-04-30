@@ -102,6 +102,7 @@ const OutrosJogos = (props) => {
             preco={item.preco}
             imagem={item.imagem}
             categorias={item.categoria}
+            desconto={0} // Adiciona desconto padrão como 0
             formatarMoeda={(valor) =>
               `R$ ${valor.toFixed(2).replace('.', ',')}`
             }
