@@ -1,7 +1,7 @@
 import React from "react";
 import GameCard from "./GameCard";
 
-const OutrosJogos = () => {
+const OutrosJogos = (props) => {
   const games = React.useMemo(
     () => [
       {
@@ -113,7 +113,7 @@ const OutrosJogos = () => {
             formatarMoeda={(valor) =>
               `R$ ${valor.toFixed(2).replace('.', ',')}`
             }
-            onAddCarrinho={() => console.log(`Adicionado: ${item.titulo}`)}
+            onAddCarrinho={() => props.onAddCarrinho(item)} // Pass the function here
           />
         ))}
       </div>
