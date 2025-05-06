@@ -31,7 +31,7 @@ const Promotion = (props) => {
         descricao:
           "Curta o poder de criar e controlar pessoas num mundo virtual onde não há regras. Seja poderoso e livre, divirta-se e jogue com a vida!",
         categoria: "Aventura, Casual, Simulação",
-        desenvolvedor: "Maxis (subsidiária da EA)",
+        desenvolvedor: "Maxis EA",
         dataLancamento: "2 de setembro de 2014",
       },
       {

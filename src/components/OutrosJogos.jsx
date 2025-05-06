@@ -7,7 +7,7 @@ const OutrosJogos = (props) => {
     () => [
       {
         id: 1,
-        titulo: "Life is Strange - Temporada Completa",
+        titulo: "Life is Strange - Completo",
         preco: 36.99,
         imagem:
           "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/319630/header.jpg?t=1724158918",
@@ -118,8 +118,10 @@ const OutrosJogos = (props) => {
             key={item.id}
             id={item.id}
             titulo={item.titulo}
+            categoria={item.categoria}
             descricao={item.descricao}
             desenvolvedor={item.desenvolvedor}
+            dataLancamento={item.dataLancamento}
             preco={item.preco}
             imagem={item.imagem}
             categorias={item.categoria}
