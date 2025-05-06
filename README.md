@@ -7,26 +7,26 @@ DevSteam é uma aplicação web inspirada na plataforma Steam, desenvolvida com 
 ## ⋆ Tecnologias utilizadas
 
 ‧₊ [React](https://reactjs.org/) <br />
-‧₊ [Vite](https://vitejs.dev/)
-‧₊ [Bootstrap 5](https://getbootstrap.com/)
-‧₊ [Bootstrap Icons](https://icons.getbootstrap.com/)
-‧₊ [React Router DOM](https://reactrouter.com/)
+‧₊ [Vite](https://vitejs.dev/)  <br />
+‧₊ [Bootstrap 5](https://getbootstrap.com/)  <br />
+‧₊ [Bootstrap Icons](https://icons.getbootstrap.com/)  <br />
+‧₊ [React Router DOM](https://reactrouter.com/)  <br />
 
 ---
 
 ## ⋆ Funcionalidades
 
-‧₊ Exibição de jogos selecionados com imagem, descrição, preço e desconto.
-‧₊ Navegação por páginas com React Router (ex: Home, Detalhes do Jogo).
-‧₊ Simulação de carrinho de compras.
-‧₊ Organização por categorias (FPS, RPG, Aventura, etc.).
-‧₊ Página de detalhes com informações completas sobre o jogo.
+‧₊ Exibição de jogos selecionados com imagem, descrição, preço e desconto.  <br />
+‧₊ Navegação por páginas com React Router (ex: Home, Detalhes do Jogo).  <br />
+‧₊ Simulação de carrinho de compras.  <br />
+‧₊ Organização por categorias (FPS, RPG, Aventura, etc.).  <br />
+‧₊ Página de detalhes com informações completas sobre o jogo.  <br />
 
 ---
 
 ## ⋆ Instalação e uso
 
-```bash
+```
 # 1. Clone o repositório
 git clone https://github.com/seu-usuario/devsteam.git
 
