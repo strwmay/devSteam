@@ -12,7 +12,7 @@ const GameDetailsModal = ({ click, gameData, formatarMoeda }) => {
     <div className={`${styles.modalBackdrop} d-flex justify-content-center align-items-center`} onClick={click}>
       <div className={`${styles.gameModal} modal-content`} onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
-          <h5 className="modal-title">{gameData.titulo}</h5>
+          <h2 className="modal-title text-uppercase fw-bold">{gameData.titulo}</h2>
           <button type="button" className="btn-close text-light" onClick={click}></button>
         </div>
         <div className="modal-body row">
@@ -54,7 +54,7 @@ const GameDetailsModal = ({ click, gameData, formatarMoeda }) => {
         </div>
         <div className="modal-footer flex-column align-items-start">
           <strong>Sobre o jogo:</strong>
-          <p>{gameData.descricao || "Descrição não disponível."}</p>
+          <p>{gameData.descricao || "Descrição não disponível."}</p> <br />
           <button
             className="btn text-light w-100"
             onClick={(e) => {
