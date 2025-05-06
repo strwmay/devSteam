@@ -6,7 +6,7 @@ DevSteam é uma aplicação web inspirada na plataforma Steam, desenvolvida com 
 
 ## ⋆ Tecnologias utilizadas
 
-‧₊ [React](https://reactjs.org/)
+‧₊ [React](https://reactjs.org/) <br />
 ‧₊ [Vite](https://vitejs.dev/)
 ‧₊ [Bootstrap 5](https://getbootstrap.com/)
 ‧₊ [Bootstrap Icons](https://icons.getbootstrap.com/)
