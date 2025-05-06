@@ -16,8 +16,10 @@ const Promotion = (props) => {
         imagem:
           "https://dlc.channel3.gg/img/avi/game-main-stardewvalley-187-20220901091059.webp",
         descricao:
-          "Você herdou a antiga fazenda do seu avô, em Stardew Valley. Com ferramentas de segunda-mão e algumas moedas, você parte para dar início a sua nova vida. Será que você vai aprender a viver da terra, a transformar esse matagal em um próspero lar?.",
+          "Você herdou a antiga fazenda do seu avô, em Stardew Valley. Com ferramentas de segunda-mão e algumas moedas, você parte para dar início a sua nova vida. Será que você vai aprender a viver da terra, a transformar esse matagal em um próspero lar?",
         categoria: "Indie, RPG, Simulação",
+        desenvolvedor: "ConcernedApe (Eric Barone)",
+        dataLancamento: "26 de fevereiro de 2016",
       },
       {
         id: 2,
@@ -29,6 +31,8 @@ const Promotion = (props) => {
         descricao:
           "Curta o poder de criar e controlar pessoas num mundo virtual onde não há regras. Seja poderoso e livre, divirta-se e jogue com a vida!",
         categoria: "Aventura, Casual, Simulação",
+        desenvolvedor: "Maxis (subsidiária da EA)",
+        dataLancamento: "2 de setembro de 2014",
       },
       {
         id: 3,
@@ -38,8 +42,10 @@ const Promotion = (props) => {
         imagem:
           "https://thaka.bing.com/th/id/OIP.yWbTJCzybQwD-6Sk84m6_QHaLH?rs=1&pid=ImgDetMain",
         descricao:
-          "Lute contra seus amigos como cachorrinhos, gatinhos ou outros bixos fofinhos em PARTY ANIMALS! Dê patadas em seus amigos tanto online quanto em casa. Interaja com nosso mundo sob nosso sistema com física realista. Eu mencionei CACHORRINHOS?.",
+          "Lute contra seus amigos como cachorrinhos, gatinhos ou outros bixos fofinhos em PARTY ANIMALS! Dê patadas em seus amigos tanto online quanto em casa. Interaja com nosso mundo sob nosso sistema com física realista. Eu mencionei CACHORRINHOS?",
         categoria: "Ação, Casual, Indie",
+        desenvolvedor: "Recreate Games",
+        dataLancamento: "20 de setembro de 2023",
       }
     ],
     []
@@ -69,6 +75,9 @@ const Promotion = (props) => {
           <PromoCard
             key={jogo.id}
             titulo={jogo.titulo}
+            descricao={jogo.descricao}
+            desenvolvedor={jogo.desenvolvedor}
+            dataLancamento={jogo.dataLancamento}
             preco={jogo.preco}
             precoFormatado={formatarMoeda(jogo.preco)}
             desconto={jogo.desconto}

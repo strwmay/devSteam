@@ -6,70 +6,58 @@ const GameDetailsModal = ({ click, gameData, formatarMoeda }) => {
 
   if (!gameData) return null;
 
-  // Calcula preço com desconto se houver promoção
   const precoComDesconto = gameData.precoComDesconto || gameData.preco;
 
   return (
-    <div className={styles.modalBackdrop} onClick={click}>
-      <div className={styles.gameModal} onClick={(e) => e.stopPropagation()}>
-        <div className={styles.gameInfo}>
-          <img
-            src={gameData.imagem}
-            alt={`Capa do jogo ${gameData.titulo}`}
-            className={styles.gameImage}
-          />
-          <button className={styles.btnClose} onClick={click}>
-            ╳
-          </button>
-          <div className={styles.gameHeader}>
-            <h1>{gameData.titulo}</h1>
-            {gameData.trailer && (
-              <button
-                className={styles.trailerButton}
-                onClick={() => setIsTrailerOpen(true)}
-              >
-                ▶ Ver Trailer
-              </button>
-            )}
-          </div>
+    <div className={`${styles.modalBackdrop} d-flex justify-content-center align-items-center`} onClick={click}>
+      <div className={`${styles.gameModal} modal-content`} onClick={(e) => e.stopPropagation()}>
+        <div className="modal-header">
+          <h5 className="modal-title">{gameData.titulo}</h5>
+          <button type="button" className="btn-close text-light" onClick={click}></button>
         </div>
+        <div className="modal-body row">
+          <div className="col-md-4 text-center">
+            <img
+              src={gameData.imagem}
+              alt={`Capa do jogo ${gameData.titulo}`}
+              className="img-fluid rounded mb-3"
+              style={{ maxHeight: "300px", objectFit: "cover" }}
+            />
 
-        <div className={styles.containerMisc}>
-          <div className={styles.containerFlex}>
-            <p>
-              <strong>Categoria:</strong> {gameData.categoria || gameData.categorias || "Não informado"}
-            </p>
-            <p>
+          </div>
+          <div className="col-md-8">
+            <div className="mb-3">
+              <strong>Categoria:</strong> {gameData.categoria || "Não informado"}
+            </div>
+            <div className="mb-3">
               <strong>Desenvolvedor:</strong> {gameData.desenvolvedor || "Não informado"}
-            </p>
-            <p>
+            </div>
+            <div className="mb-3">
               <strong>Data de Lançamento:</strong> {gameData.dataLancamento || "Não informado"}
-            </p>
-          </div>
-          
-          <div className={styles.priceSection}>
-            {gameData.desconto ? (
-              <>
-                <span className={styles.discountTag}>-{gameData.desconto}%</span>
-                <span className={styles.originalPrice}>{formatarMoeda(gameData.preco)}</span>
-                <span className={styles.discountedPrice}>{formatarMoeda(precoComDesconto)}</span>
-              </>
-            ) : (
-              <span className={styles.normalPrice}>{formatarMoeda(gameData.preco)}</span>
-            )}
+            </div>
+            <div className="mb-3">
+              {gameData.desconto ? (
+                <>
+                  <span className="precoAnterior text-decoration-line-through small me-2">
+                    {formatarMoeda(gameData.preco)}
+                  </span> <br />
+                  <span className="precoAtual fw-bold fs-3">
+                    {formatarMoeda(precoComDesconto)}
+                  </span>
+                </>
+              ) : (
+                <span>{formatarMoeda(gameData.preco)}</span>
+              )}
+            </div>
           </div>
         </div>
-        
-        <div className={styles.desc}>
-          <h3>Sobre o jogo</h3>
+        <div className="modal-footer flex-column align-items-start">
+          <strong>Sobre o jogo:</strong>
           <p>{gameData.descricao || "Descrição não disponível."}</p>
-        </div>
-        
-        <div className={styles.actions}>
           <button
-            className={styles.addToCart}
+            className="btn text-light w-100"
             onClick={(e) => {
-              e.stopPropagation(); // Impede que o clique feche o modal
+              e.stopPropagation();
               gameData.onAddCarrinho();
               click();
             }}
@@ -80,22 +68,16 @@ const GameDetailsModal = ({ click, gameData, formatarMoeda }) => {
         </div>
       </div>
 
-      {/* POP-UP DO TRAILER */}
       {isTrailerOpen && gameData.trailer && (
         <div
-          className={styles.trailerBackdrop}
+          className={`${styles.trailerBackdrop} d-flex justify-content-center align-items-center`}
           onClick={() => setIsTrailerOpen(false)}
         >
-          <div
-            className={styles.trailerModal}
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className={`${styles.trailerModal} modal-content`}>
             <button
-              className={styles.btnClose}
+              className="btn-close text-light position-absolute top-0 end-0 m-2"
               onClick={() => setIsTrailerOpen(false)}
-            >
-              ╳
-            </button>
+            ></button>
             <iframe
               width="100%"
               height="450"
