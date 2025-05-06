@@ -14,16 +14,23 @@ const Perfil = () => {
   }, []);
 
   return (
-    <div className="container d-flex mt-5 ms-5">
-      {/* Saudação com o nome do usuário */}
+    <div className="container d-flex justify-content-center mt-5">
+    {/* Saudação com o nome do usuário */}
 
-      {/* Botão de Cadastro */}
-      <div className="d-flex flex-column align-items-start gap-3 me-4">
-        <div>
-          {usuario && (
-            <h2 className="mb-4">Olá, {usuario.nome.split(" ")[0]}!</h2>
-          )}
-        </div>
+    {/* Botão de Cadastro */}
+    <div className="d-flex flex-column align-items-start gap-3 me-4">
+      <div className="d-flex align-items-center">
+        <img
+          className="rounded-5 mb-4"
+          src={`https://ui-avatars.com/api/?name=${usuario.nome}&background=2b87ae&color=fff`}
+          alt=""
+          />
+        {usuario && (
+          <h2 className="ms-3 fs-4">
+            Olá, {usuario.nome.split(" ")[0]}!
+          </h2>
+        )}
+      </div>
         <Botao
           titulo="Cadastro"
           desc="Ver e alternar seus dados"
@@ -35,6 +42,7 @@ const Perfil = () => {
           desc="Ver e alternar seus dados do cartão"
           click={() => setMostrarItem("Cartao")} // Alterna a exibição do perfil
         />
+        
         {usuario.tipo == "admin" && (
           <>
             <Botao
