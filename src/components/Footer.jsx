@@ -32,9 +32,9 @@ const Footer = () => {
         <div className="pt-4 w-100 d-flex flex-column align-items-center">
           <div id="info" className="d-flex align-items-center gap-3">
             <i className="bi bi-controller fs-1 text-white"></i>
-            <span className="navbar-brand fw-bold fs-3 text-white">DevSteam</span>
+            <h1 className="navbar-brand fw-bold fs-1 text-white">DevSteam</h1>
           </div>
-          <p className="mt-2 text-white"><strong>Copyright © 2025 DevSteamSenai</strong></p>
+          <p className="mt-2 text-white"><span>Copyright © 2025 DevSteamSenai</span></p>
         </div>
       </div>
     </footer>
