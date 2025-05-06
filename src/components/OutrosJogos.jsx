@@ -39,7 +39,11 @@ const OutrosJogos = (props) => {
         titulo: "Red Dead Redemption 2",
         preco: 199.9,
         imagem:
+<<<<<<< HEAD
           "https://tse3.mm.bing.net/th/id/OIP.Mvqh5xhx-dWQWDDsV7dVMwHaEK?cb=iwc1&rs=1&pid=ImgDetMain",
+=======
+          "https://i0.wp.com/www.portaldonerd.com.br/wp-content/uploads/2018/11/red-dead-redemption-2-hero-banner-03-ps4-us-07jun18.jpg",
+>>>>>>> may
         descricao:
           "Viva o Velho Oeste como Arthur Morgan em uma jornada cinematográfica com detalhes incríveis e mundo vivo.",
         categoria: "Ação e Aventura",
