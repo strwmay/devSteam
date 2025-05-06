@@ -115,8 +115,10 @@ const OutrosJogos = (props) => {
             key={item.id}
             id={item.id}
             titulo={item.titulo}
+            categoria={item.categoria}
             descricao={item.descricao}
             desenvolvedor={item.desenvolvedor}
+            dataLancamento={item.dataLancamento}
             preco={item.preco}
             imagem={item.imagem}
             categorias={item.categoria}

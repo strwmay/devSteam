@@ -46,7 +46,8 @@ const GameDetailsModal = ({ click, gameData, formatarMoeda }) => {
                   </span>
                 </>
               ) : (
-                <span>{formatarMoeda(gameData.preco)}</span>
+                <span className="precoAtual fw-bold fs-3">
+                  {formatarMoeda(gameData.preco)}</span>
               )}
             </div>
           </div>
