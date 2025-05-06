@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import GameDetailsModal from './GameDetailsModal';
+import styles from "./GameCard.module.css";
 
 const GameCard = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -9,38 +10,36 @@ const GameCard = (props) => {
     <>
       <div
         id="GameCard"
-        className="gameCard card border-0 d-flex flex-row align-items-center"
-        style={{ width: '1164px', height: '145px', cursor: 'pointer' }}
+        className={`${styles.gameCard} card`}
         onClick={toggleModal}
       >
         <img
-          className="object-fit-cover"
+          className={styles.image}
           src={props.imagem}
           alt={props.titulo}
-          style={{ width: '305px', height: '145px' }}
         />
-        <div className="card-body d-flex flex-column justify-content-between ms-3">
+        <div className={styles.cardBody}>
           <h5
             data-bs-toggle="tooltip"
             title={props.titulo}
-            className="card-title text-uppercase fw-bold text-truncate text-light"
+            className={styles.cardTitle}
           >
             {props.titulo}
           </h5>
-          <p className="card-text small">{props.categorias}</p>
-          <div className="d-flex justify-content-between align-items-end">
-            <p className="corValor m-0 p-0 fs-5 fw-bolder">
+          <p className={styles.cardText}>{props.categorias}</p>
+          <div className={styles.priceSection}>
+            <p className={styles.price}>
               {props.formatarMoeda(props.preco)}
             </p>
             <button
               id="addCarrinho"
-              className="btn text-light border-0"
+              className={styles.addToCartButton}
               onClick={(e) => {
                 e.stopPropagation(); // Impede que o clique feche o modal
                 props.onAddCarrinho();
               }}
             >
-              <i className="bi bi-cart-plus me-2"></i>
+              <i className="bi bi-cart-plus"></i>
               Adicionar ao carrinho
             </button>
           </div>

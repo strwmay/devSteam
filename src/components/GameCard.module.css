@@ -1,0 +1,115 @@
+.gameCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 0;
+  width: 1164px;
+  height: 145px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1b2838, #364a63); /* Gradiente */
+  color: #fff; 
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.gameCard:hover {
+  transform: scale(1.03); /* Aumenta ligeiramente o tamanho */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.gameCard img {
+  width: 305px;
+  height: 145px;
+  object-fit: cover;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+.cardTitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff; /* Texto branco */
+}
+
+.cardText {
+  font-size: 0.875rem;
+  color: #c7d5e0; /* Texto secundário */
+}
+
+.priceSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #66c0f4; /* Azul claro */
+}
+
+.addToCartButton {
+  border: 0;
+  background-color: #5c9210; /* Verde original */
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.addToCartButton:hover {
+  background-color: #4b7a0d; /* Verde escuro ao passar o mouse */
+}
+
+.addToCartButton i {
+  margin-right: 0.5rem;
+}
+
+/* Estilização para dispositivos móveis */
+@media (max-width: 768px) {
+  .gameCard {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .gameCard img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardBody {
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .priceSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .addToCartButton {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
