@@ -15,6 +15,10 @@ body {
   color: #9d9d9d;
 }
 
+.text-uppercase {
+  color: #fff;
+}
+
 .promoCard {
   width: 280px;
   transition: transform 0.2s;
@@ -47,6 +51,10 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #547625;
 }
 
 .gameCard img {

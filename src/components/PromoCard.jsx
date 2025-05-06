@@ -62,7 +62,9 @@ const PromoCard = (props) => {
           click={toggleModal} 
           gameData={{
             ...props,
-            precoComDesconto
+            precoComDesconto,
+            desenvolvedor: props.desenvolvedor || "Desenvolvedor desconhecido",
+            dataLancamento: props.dataLancamento || "Data não informada"
           }}
           formatarMoeda={props.formatarMoeda}
         />

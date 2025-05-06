@@ -52,3 +52,16 @@
   max-width: 900px;
   width: 90%;
 }
+
+.btn:hover {
+  background-color: #4c6b22;
+  color: #fff;
+}
+
+.precoAnterior {
+  color: #777; 
+}
+
+.precoAtual {
+  color: #beeb14; 
+}
