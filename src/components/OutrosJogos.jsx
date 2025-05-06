@@ -1,5 +1,6 @@
 import React from "react";
 import GameCard from "./GameCard";
+import Footer from './Footer';
 
 const OutrosJogos = (props) => {
   const games = React.useMemo(
@@ -104,6 +105,8 @@ const OutrosJogos = (props) => {
     []
   );
 
+
+
   return (
     <div id="outrosJogos" className="container w-75 my-5">
       <h2 className="text-uppercase text-center text-md-start ms-md-5 ps-md-3 mb-4">
@@ -124,10 +127,11 @@ const OutrosJogos = (props) => {
             formatarMoeda={(valor) =>
               `R$ ${valor.toFixed(2).replace('.', ',')}`
             }
-            onAddCarrinho={() => props.onAddCarrinho(item)} // Pass the function here
+            onAddCarrinho={() => props.onAddCarrinho(item)}
           />
         ))}
       </div>
+
     </div>
   );
 };
