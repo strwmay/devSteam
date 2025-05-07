@@ -13,7 +13,7 @@
 
 .gameModal {
   background: linear-gradient(to top, #2a2f3d, #1e2b3e); /* Same gradient as the card */
-  color: #fff;
+  color: #b1b5bf;
   padding: 25px;
   border-radius: 12px;
   max-width: 850px;
@@ -114,12 +114,16 @@
 }
 
 .precoAnterior {
-  color: #777 !important;
+  color: #5d709f !important;
 
 }
 
 .precoAtual {
   color: #beeb14 !important;
+}
+
+.preco {
+  color: #66c0f4 !important;
 }
 
 .btnClose {
