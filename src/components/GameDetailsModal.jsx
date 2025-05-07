@@ -1,8 +1,6 @@
-import { useState } from "react";
 import styles from "./GameDetailsModal.module.css";
 
 const GameDetailsModal = ({ click, gameData, formatarMoeda }) => {
-  const [isTrailerOpen, setIsTrailerOpen] = useState(false);
 
   if (!gameData) return null;
 
@@ -90,29 +88,6 @@ const GameDetailsModal = ({ click, gameData, formatarMoeda }) => {
           </div>
         </div>
       </div>
-
-      {isTrailerOpen && gameData.trailer && (
-        <div
-          className={`${styles.trailerBackdrop} d-flex justify-content-center align-items-center`}
-          onClick={() => setIsTrailerOpen(false)}
-        >
-          <div className={`${styles.trailerModal} modal-content`}>
-            <i
-              className="bi bi-x text-light position-absolute top-0 end-0 m-2"
-              onClick={() => setIsTrailerOpen(false)}
-            ></i>
-            <iframe
-              width="100%"
-              height="450"
-              src={`https://www.youtube.com/embed/${gameData.trailer}`}
-              title={`Trailer do jogo ${gameData.titulo}`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
