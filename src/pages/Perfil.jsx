@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Botao from "../components/Botao";
 import Cadastro from "../components/Cadastro";
 import Cartao from "../components/Cartao";
+import { Link } from "react-router";
 
 const Perfil = () => {
   const [usuario, setUsuario] = useState("");
@@ -24,10 +25,12 @@ const Perfil = () => {
   return (
     <div className="container d-flex justify-content-center mt-5">
       {/* Saudação com o nome do usuário */}
-      <i
-        className="bi bi-arrow-left-short fs-1 mt-"
-        style={{ cursor: "pointer" }}
-      ></i>
+      <Link to={"/"}>
+        <i
+          className=" bi bi-arrow-left-short fs-1 mt-2"
+          // style={{ cursor: "pointer" }}
+        ></i>
+      </Link>
 
       {/* Botão de Cadastro */}
       <div className="d-flex flex-column align-items-start gap-3 me-4">
