@@ -224,22 +224,6 @@ const Checkout = () => {
                 )}
               </div>
 
-              {/* PRIMEIRO DIVISOR */}
-              <hr className="my-3" />
-
-              {/* Seção de subtotal e frete */}
-              <div className="d-flex justify-content-between mb-2">
-                <span>
-                  Subtotal ({carrinho.length}{" "}
-                  {carrinho.length === 1 ? "item" : "itens"})
-                </span>
-                <span>{formatarMoeda(subtotal)}</span>
-              </div>
-              <div className="d-flex justify-content-between mb-2">
-                <span>Frete</span>
-                <span className="text-success">Grátis</span>
-              </div>
-
               {/* Exibe o desconto do cupom quando aplicado */}
               {cupomAplicado && (
                 <div className="d-flex justify-content-between mb-2 mt-2">
