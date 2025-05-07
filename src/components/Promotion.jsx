@@ -25,7 +25,7 @@ const Promotion = (props) => {
         id: 2,
         titulo: "The Sims 4 - Completo",
         preco: 999.99,
-        desconto: 5,
+        desconto: 15,
         imagem:
           "https://www.devarsiv.com/wp-content/uploads/2023/02/The-Sims-4-INDIR-TUM-DLCler-Turkce-YAMA-TORRENT-FULL-INDIR-500x677-1.jpg",
         descricao:
@@ -46,6 +46,45 @@ const Promotion = (props) => {
         categoria: "Ação, Casual, Indie",
         desenvolvedor: "Recreate Games",
         dataLancamento: "20 de setembro de 2023",
+      },
+      {
+        id: 4,
+        titulo: "Staxel",
+        preco: 36.99,
+        desconto: 20,
+        imagem:
+          "https://gpstatic.com/acache/49/94/1/fr/packshot-67082148a14ff5ed2b8839e09301d59b.jpg",
+        descricao:
+          "Expanda sua fazenda, conheça os habitantes e junte-se a seus amigos on-line para construir o seu mundo.",
+        categoria: "Simulador Rural, Agricultura",
+        desenvolvedor: "Plukit",
+        dataLancamento: "11 de abril de 2019",
+      },
+      {
+        id: 5,
+        titulo: "Stray",
+        preco: 79.99,
+        desconto: 5,
+        imagem:
+          "https://th.bing.com/th/id/R.9ad38ac01111c5e8787469a4914a0efb?rik=UIzC5gRb95ZSjw&riu=http%3a%2f%2frogallylife.com%2fstorage%2f2023%2f08%2fstray-rog-ally-game-cover.webp&ehk=SmBq9RBAeqRVbLDXtYpKKlmC3x5mjsB1DOuHrffGG7A%3d&risl=&pid=ImgRaw&r=0",
+        descricao:
+          "Perdido, sozinho e separado da sua família, um gato de rua deve desvendar um mistério antigo para escapar de uma cidade cibernética esquecida e encontrar o caminho de volta para casa.",
+        categoria: "Aventura, Atmosférico",
+        desenvolvedor: "BlueTwelve Studio",
+        dataLancamento: "19 de julho de 2022",
+      },
+      {
+        id: 6,
+        titulo: "Hi-Fi Rush",
+        preco: 109.00,
+        desconto: 30,
+        imagem:
+          "https://cdn2.steamgriddb.com/thumb/c4f0dfcf446c4309e4d0663005d8511b.jpg",
+        descricao:
+          "Sinta a batida enquanto o aspirante a estrela Chai e seu inesperado time de aliados lutam contra uma megacorporação maligna usando um estrondoso combate ritmado!",
+        categoria: "Ritmo, Ação, Música",
+        desenvolvedor: "Tango Gameworks",
+        dataLancamento: "25 de janeiro de 2023",
       }
     ],
     []

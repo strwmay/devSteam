@@ -6,7 +6,7 @@ const OutrosJogos = (props) => {
   const games = React.useMemo(
     () => [
       {
-        id: 1,
+        id: 7,
         titulo: "Life is Strange - Completo",
         preco: 36.99,
         imagem:
@@ -18,7 +18,7 @@ const OutrosJogos = (props) => {
         dataLancamento: "30 de Janeiro de 2015",
       },
       {
-        id: 2,
+        id: 8,
         titulo: "Detroit: Become Human",
         preco: 119.99,
         imagem:
@@ -30,7 +30,7 @@ const OutrosJogos = (props) => {
         dataLancamento: "25 de maio de 2018",
       },
       {
-        id: 3,
+        id: 9,
         titulo: "The Quarry",
         preco: 349.90,
         imagem:
@@ -42,7 +42,7 @@ const OutrosJogos = (props) => {
         dataLancamento: "10 de junho de 2022",
       },
       {
-        id: 4,
+        id: 10,
         titulo: "Red Dead Redemption 2",
         preco: 199.9,
         imagem:
@@ -54,7 +54,7 @@ const OutrosJogos = (props) => {
         dataLancamento: "26 de outubro de 2018",
       },
       {
-        id: 5,
+        id: 11,
         titulo: "Resident Evil 4",
         preco: 69.50,
         imagem:
@@ -66,7 +66,7 @@ const OutrosJogos = (props) => {
         dataLancamento: "24 de março de 2023",
       },
       {
-        id: 6,
+        id: 12,
         titulo: "The Last of Us",
         preco: 249.90,
         imagem:
@@ -78,7 +78,7 @@ const OutrosJogos = (props) => {
         dataLancamento: "14 de junho de 2013",
       },
       {
-        id: 7,
+        id: 13,
         titulo: "Final Fantasy VII Rebirth",
         preco: 223.93,
         imagem:
@@ -90,7 +90,7 @@ const OutrosJogos = (props) => {
         dataLancamento: "29 de fevereiro de 2024",
       },
       {
-        id: 8,
+        id: 14,
         titulo: "Until Dawn",
         preco: 299.99,
         imagem:
