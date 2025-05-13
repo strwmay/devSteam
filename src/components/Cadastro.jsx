@@ -39,7 +39,13 @@ const Cadastro = (props) => {
       return;
     }
 
-    // Lógica para salvar as alterações
+    // Atualiza o localStorage
+    const novoUsuario = { ...props.usuario, nome, email, telefone, cpf };
+    localStorage.setItem("devlogin", JSON.stringify(novoUsuario));
+
+    // Chama a função de atualização passada como prop
+    props.onAtualizarUsuario(novoUsuario);
+
     console.log("Alterações salvas:", { nome, email, telefone, cpf });
     setErroEmail("");
     setErroTelefone("");
@@ -75,7 +81,9 @@ const Cadastro = (props) => {
             <div className="w-100">
               <input
                 type="email"
-                className={`rounded-5 form-control ${erroEmail ? "is-invalid" : ""}`}
+                className={`rounded-5 form-control ${
+                  erroEmail ? "is-invalid" : ""
+                }`}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 onBlur={() => {
@@ -98,15 +106,20 @@ const Cadastro = (props) => {
             <div className="w-100">
               <input
                 type="text"
-                className={`rounded-5 form-control ${erroTelefone ? "is-invalid" : ""}`}
+                className={`rounded-5 form-control ${
+                  erroTelefone ? "is-invalid" : ""
+                }`}
                 value={telefone}
                 onChange={(e) => setTelefone(e.target.value)}
                 onBlur={() => {
-                  if (!validarTelefone(telefone)) setErroTelefone("Telefone deve ter 10 ou 11 dígitos.");
+                  if (!validarTelefone(telefone))
+                    setErroTelefone("Telefone deve ter 10 ou 11 dígitos.");
                   else setErroTelefone("");
                 }}
               />
-              {erroTelefone && <div className="invalid-feedback">{erroTelefone}</div>}
+              {erroTelefone && (
+                <div className="invalid-feedback">{erroTelefone}</div>
+              )}
             </div>
           ) : (
             <p className="card-text">{telefone || "Seu telefone aqui"}</p>
@@ -121,11 +134,14 @@ const Cadastro = (props) => {
             <div className="w-100">
               <input
                 type="text"
-                className={`rounded-5 form-control ${erroCpf ? "is-invalid" : ""}`}
+                className={`rounded-5 form-control ${
+                  erroCpf ? "is-invalid" : ""
+                }`}
                 value={cpf}
                 onChange={(e) => setCpf(e.target.value)}
                 onBlur={() => {
-                  if (!validarCpf(cpf)) setErroCpf("CPF deve ter exatamente 11 dígitos.");
+                  if (!validarCpf(cpf))
+                    setErroCpf("CPF deve ter exatamente 11 dígitos.");
                   else setErroCpf("");
                 }}
               />

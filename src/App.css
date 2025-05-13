@@ -45,6 +45,23 @@ body {
   color: #c7c7c7;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.btn {
+  background-color: #4c6b22;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #547625;
+}
+
+>>>>>>> Juliana
+>>>>>>> Juliana
 .gameCard img {
   width: 305px;
   height: 145px;
