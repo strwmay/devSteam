@@ -58,7 +58,9 @@ const Perfil = () => {
 
         {usuario.tipo == "admin" && (
           <>
-            <Botao titulo="Cadastro Jogos" desc="Ver e alternar seus dados" />
+            <Botao titulo="Cadastro Jogos" desc="Ver e alternar seus dados" 
+            click={() => setMostrarItem("CadastroJogo")}
+            />
           </>
         )}
       </div>
