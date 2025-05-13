@@ -32,7 +32,7 @@ const Login = () => {
             <input
               value={nome}
               onChange={(e) => setNome(e.target.value)}
-              className="form-control rounded-3"
+              className="rounded-5 form-control"
               type="text"
               name="frmNome"
               id="frmNome"
@@ -47,7 +47,7 @@ const Login = () => {
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="form-control rounded-3"
+              className="rounded-5 form-control rounded-3"
               type="email"
               name="frmEmail"
               id="frmEmail"
@@ -64,7 +64,7 @@ const Login = () => {
               <input
                 value={senha}
                 onChange={(e) => setSenha(e.target.value)}
-                className="form-control rounded-3"
+                className="rounded-5 form-control"
                 type={mostrarSenha ? "text" : "password"} // Alterna entre "password" e "text"
                 name="frmSenha"
                 id="frmSenha"
@@ -75,7 +75,7 @@ const Login = () => {
                 className="btn bg-transparent border-3 rounded-3"
                 onClick={() => setMostrarSenha(!mostrarSenha)} // Alterna visibilidade
               >
-                {mostrarSenha ? <i class="bi bi-eye-slash-fill"></i> : <i class="bi bi-eye-fill"></i>}
+                {mostrarSenha ? <i class=" bi bi-eye-slash-fill"></i> : <i class="bi bi-eye-fill"></i>}
               </button>
             </div>
           </div>
